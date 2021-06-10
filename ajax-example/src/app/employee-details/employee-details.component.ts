@@ -46,7 +46,7 @@ export class EmployeeDetailsComponent implements OnInit {
   }
 
   getGeoLocation(location: any) {
-    const { lat: Latitude, log: Longitude } = location;
+    const { lat: Latitude, lng: Longitude } = location;
     return { Latitude, Longitude };
   }
 

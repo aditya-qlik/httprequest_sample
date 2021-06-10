@@ -7,18 +7,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { NewEmployeeComponent } from './new-employee/new-employee.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    NewEmployeeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
